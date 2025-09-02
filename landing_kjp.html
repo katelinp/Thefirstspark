@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>KJP — The First Spark • Sigilcraft • Digital Launch</title>
+  <meta name="description" content="KJP launches The First Spark ecosystem: SIGILCRAFT eBook, Genesis NFT, and a quick-hit mini‑course. Join the drop, learn the craft, and spark your next reality.">
+  <meta property="og:title" content="KJP — The First Spark Launch">
+  <meta property="og:description" content="SIGILCRAFT eBook • Genesis NFT • Mini‑Course. Join the drop and spark your next reality.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=KJP+The+First+Spark">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='50%25' x='50%25' dominant-baseline='middle' text-anchor='middle' font-size='48'%3E%F0%9F%94%A5%3C/text%3E%3C/svg%3E">
+  <style>
+    :root{
+      --bg:#0f0f10;
+      --card:#151517;
+      --ink:#eaeaea;
+      --muted:#bcbcbc;
+      --accent:#ffd166;   /* warm gold */
+      --accent-2:#7bdff2; /* sky */
+      --accent-3:#b892ff; /* violet */
+      --good:#7bd88f;
+      --bad:#ff7b7b;
+      --radius:14px;
+      --shadow:0 8px 30px rgba(0,0,0,.35);
+      --max:1150px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif}
+    a{color:var(--ink);text-decoration:none}
+    .wrap{max-width:var(--max);margin:0 auto;padding:24px}
+    header{position:sticky;top:0;background:linear-gradient(180deg,rgba(15,15,16,.95),rgba(15,15,16,.85));backdrop-filter:blur(8px);z-index:5;border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.4px}
+    .logo{width:36px;height:36px;border-radius:10px;background:conic-gradient(from 210deg at 50% 50%, var(--accent), var(--accent-2), var(--accent-3), var(--accent));box-shadow:0 0 0 2px rgba(255,255,255,.06)}
+    .nav a{opacity:.9}
+    .nav .links{display:flex;gap:18px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:12px 18px;border-radius:12px;background:var(--ink);color:#0b0b0c;font-weight:700;border:1px solid rgba(255,255,255,.12);box-shadow:var(--shadow);transition:transform .08s ease, filter .2s ease}
+    .btn:hover{transform:translateY(-1px);filter:brightness(1.05)}
+    .btn.ghost{background:transparent;color:var(--ink);border-color:rgba(255,255,255,.18)}
+    .tag{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.08);color:var(--muted);font-size:12px;border:1px solid rgba(255,255,255,.12)}
+    .hero{padding:64px 0;display:grid;grid-template-columns:1.1fr 0.9fr;gap:28px;align-items:center}
+    .hero h1{font-size:clamp(28px,5vw,52px);line-height:1.1;margin:10px 0 16px}
+    .hero p{font-size:clamp(15px,2.1vw,18px);color:var(--muted)}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));border:1px solid rgba(255,255,255,.10);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .hero .art{min-height:280px;border-radius:var(--radius);background:
+      radial-gradient(1200px 600px at 20% -10%, rgba(255,209,102,.18), transparent 60%),
+      radial-gradient(1200px 600px at 90% 10%, rgba(123,223,242,.18), transparent 60%),
+      radial-gradient(1200px 600px at 30% 120%, rgba(184,146,255,.18), transparent 60%),
+      url('https://via.placeholder.com/900x600.png?text=The+First+Spark') center/cover no-repeat;
+      border:1px solid rgba(255,255,255,.12);
+    }
+    .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
+    .kpi{padding:16px;border-radius:12px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.10)}
+    .kpi b{font-size:22px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .module{padding:20px}
+    .module h3{margin:8px 0 8px;font-size:22px}
+    .price{font-size:28px;font-weight:800}
+    .check{color:var(--good);margin-right:8px}
+    .muted{color:var(--muted)}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+    .section{padding:54px 0}
+    .section h2{font-size:clamp(22px,3.5vw,34px);margin:10px 0 14px}
+    .stack{display:flex;flex-direction:column;gap:12px}
+    .list{display:flex;flex-direction:column;gap:8px}
+    .testimonial{padding:18px;border-radius:12px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.10);font-style:italic}
+    .faq{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    details{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.10);border-radius:12px;padding:14px}
+    summary{cursor:pointer;font-weight:700}
+    .cta-bar{position:sticky;bottom:14px;display:flex;gap:10px;justify-content:center;align-items:center;padding:10px;background:rgba(20,20,22,.6);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.12);border-radius:999px;margin:24px auto;max-width:var(--max)}
+    .input{display:flex;gap:8px;flex-wrap:wrap}
+    input[type="email"]{flex:1;min-width:220px;padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.22);background:#0b0b0c;color:var(--ink)}
+    footer{padding:32px 0;color:var(--muted);border-top:1px solid rgba(255,255,255,.06)}
+    .badge{border:1px dashed rgba(255,255,255,.25);padding:6px 10px;border-radius:10px;font-size:12px}
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Courier New", monospace;}
+    @media (max-width: 960px){
+      .hero{grid-template-columns:1fr;gap:18px;padding-top:36px}
+      .grid{grid-template-columns:1fr}
+      .split{grid-template-columns:1fr}
+      .faq{grid-template-columns:1fr}
+      .kpis{grid-template-columns:1fr 1fr 1fr}
+    }
+    @media (max-width: 560px){
+      .kpis{grid-template-columns:1fr 1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>KJP • The First Spark</div>
+      </div>
+      <nav class="links">
+        <a href="#products">Products</a>
+        <a href="#utility">Utility</a>
+        <a href="#faq">FAQ</a>
+        <a href="#join" class="btn ghost">Join List</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <span class="tag">New Drop</span>
+        <h1>Ignite your next chapter with <span style="color:var(--accent)">The First Spark</span>.</h1>
+        <p>Three ways to plug into the ecosystem: the <b>SIGILCRAFT eBook</b> to learn the craft, the <b>Genesis NFT — Born from the Glitch</b> to own a piece of the mythos, and a <b>rapid‑fire mini‑course</b> to level up in an hour. No fluff. Just fuel.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px">
+          <a class="btn" href="#products">See Products</a>
+          <a class="btn ghost" href="#join">Get Early Access</a>
+        </div>
+        <div class="kpis">
+          <div class="kpi">
+            <div class="muted">Early‑bird</div>
+            <b>20% off</b>
+          </div>
+          <div class="kpi">
+            <div class="muted">Community</div>
+            <b>Discord access</b>
+          </div>
+          <div class="kpi">
+            <div class="muted">Bonus</div>
+            <b>Denim patch SVG</b>
+          </div>
+        </div>
+      </div>
+      <div class="card art" role="img" aria-label="Abstract artwork for The First Spark"></div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="section">
+      <h2>Pick your entry point</h2>
+      <p class="muted">Start with one—or bundle and save. Each product stands alone, and together they stack.</p>
+      <div class="grid">
+        <!-- eBook -->
+        <article class="card module">
+          <span class="badge mono">eBook • PDF (8.5x11) & EPUB</span>
+          <h3>SIGILCRAFT — The Field Guide</h3>
+          <p class="muted">A clean, practical system to design personal sigils, map meaning, and put intention to work—without the fluff or gatekeeping.</p>
+          <ul class="list">
+            <li><span class="check">✔</span> 120+ pages, printable worksheets</li>
+            <li><span class="check">✔</span> Lifetime updates</li>
+            <li><span class="check">✔</span> Commercial‑friendly templates</li>
+          </ul>
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-top:10px">
+            <div class="price">$29</div>
+            <!-- TODO: replace # with your store URL (Gumroad/Shopify/Lulu) -->
+            <a class="btn" href="#" aria-label="Buy the SIGILCRAFT eBook now">Buy eBook</a>
+          </div>
+        </article>
+
+        <!-- NFT -->
+        <article class="card module">
+          <span class="badge mono">NFT • Polygon • 1/1 & Editions</span>
+          <h3>The First Spark — Genesis NFT</h3>
+          <p class="muted">Own a fragment of the origin myth. Utility on mint: private Discord channel, drops allow‑list, and a physical KJP denim patch for early minters.</p>
+          <ul class="list">
+            <li><span class="check">✔</span> Collectible art + lore PDF</li>
+            <li><span class="check">✔</span> Holder‑only airdrops & perks</li>
+            <li><span class="check">✔</span> Redeemable physical add‑on</li>
+          </ul>
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-top:10px">
+            <div class="price">$15–$77</div>
+            <!-- TODO: replace # with your OpenSea collection URL -->
+            <a class="btn" href="#" aria-label="Mint the Genesis NFT">Mint / View</a>
+          </div>
+        </article>
+
+        <!-- Course -->
+        <article class="card module">
+          <span class="badge mono">Course • 60 minutes • Self‑paced</span>
+          <h3>Sigilcraft Mini‑Course</h3>
+          <p class="muted">Tight video walkthrough + downloadable kit. Make your first powered sigil in under an hour and deploy it IRL and online.</p>
+          <ul class="list">
+            <li><span class="check">✔</span> 7 concise lessons + kit</li>
+            <li><span class="check">✔</span> CapCut/Procreate presets</li>
+            <li><span class="check">✔</span> Q&A recording + Discord</li>
+          </ul>
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-top:10px">
+            <div class="price">$49</div>
+            <!-- TODO: replace # with your course URL (Gumroad/Teachable/Kajabi) -->
+            <a class="btn" href="#" aria-label="Enroll in the Sigilcraft Mini-Course">Enroll</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Bundle -->
+      <div class="card module" style="margin-top:18px">
+        <div class="split">
+          <div>
+            <h3>Creator Bundle — Save 30%</h3>
+            <p class="muted">Get the eBook + Mini‑Course + a Genesis NFT allow‑list spot. Includes templates, Discord access, and future update credits.</p>
+            <ul class="list">
+              <li><span class="check">✔</span> All current & future updates</li>
+              <li><span class="check">✔</span> Private creator sessions</li>
+              <li><span class="check">✔</span> License to sell up to 25 items using included SVGs</li>
+            </ul>
+          </div>
+          <div class="stack" style="justify-content:center">
+            <div class="price">$79</div>
+            <a class="btn" href="#" aria-label="Buy the Creator Bundle">Get the Bundle</a>
+            <div class="muted mono" style="font-size:12px">Secure checkout via Gumroad/Stripe</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UTILITY / ROADMAP -->
+    <section id="utility" class="section">
+      <h2>Utility & Roadmap</h2>
+      <div class="grid">
+        <div class="card module">
+          <h3>For Readers</h3>
+          <p class="muted">Practical worksheets, printable templates, and real examples from KJP’s studio. You’ll finish with a working system you can reuse.</p>
+        </div>
+        <div class="card module">
+          <h3>For Collectors</h3>
+          <p class="muted">NFT holders get access to gated drops, denim patch claims, and co‑creation challenges. Early snapshots = bigger perks.</p>
+        </div>
+        <div class="card module">
+          <h3>For Makers</h3>
+          <p class="muted">Course students get presets for Procreate and CapCut, plus a licensing pathway to sell limited runs of your creations.</p>
+        </div>
+      </div>
+      <div class="card module" style="margin-top:18px">
+        <h3>Near‑Term Roadmap</h3>
+        <ol class="list">
+          <li><b>Week 1:</b> eBook v1.0 + Discord open</li>
+          <li><b>Week 2:</b> Genesis NFT claim + lore PDF drop</li>
+          <li><b>Week 3:</b> Mini‑course release + live Q&A</li>
+          <li><b>Week 4:</b> Template pack v1 and patch redemptions</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SOCIAL PROOF -->
+    <section class="section">
+      <h2>People are sparking up</h2>
+      <div class="grid">
+        <blockquote class="testimonial">“No woo-woo fluff — just a crisp system I could actually follow. Made my first sigil in 30 minutes.” — <b>@studiojay</b></blockquote>
+        <blockquote class="testimonial">“The art + lore combo slaps. Can’t wait for the next airdrop.” — <b>@lunalex</b></blockquote>
+        <blockquote class="testimonial">“Course was tight, zero filler. The presets sped me up like crazy.” — <b>@denimdoc</b></blockquote>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section">
+      <h2>About KJP</h2>
+      <div class="split">
+        <p class="muted">Kaitlin (KJP) makes denim art, builds sigil systems, and ships bite‑size digital products that help you turn intention into artifacts. Akron‑born, hands‑on, no‑nonsense. If it doesn’t help you move, it doesn’t ship.</p>
+        <div class="card module">
+          <div class="stack">
+            <div><span class="badge">Tools</span> Procreate • Adobe • Canva • CapCut</div>
+            <div><span class="badge">Brands</span> The First Spark • SIGILCRAFT • KJP Denim • Obitura</div>
+            <div><span class="badge">Community</span> Discord • TikTok • Instagram</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <h2>FAQ</h2>
+      <div class="faq">
+        <details>
+          <summary>How do I get the files after purchase?</summary>
+          <p class="muted">Instant download via your receipt email + account page. You’ll also get any future updates sent automatically.</p>
+        </details>
+        <details>
+          <summary>Do I need crypto for the NFT?</summary>
+          <p class="muted">You can pay with a card (via OpenSea/Stripe) or with crypto. We’re using Polygon to keep fees low.</p>
+        </details>
+        <details>
+          <summary>Refunds?</summary>
+          <p class="muted">If it’s not helpful, email us within 7 days. We’ll make it right or refund you. Simple.</p>
+        </details>
+        <details>
+          <summary>Commercial use?</summary>
+          <p class="muted">Templates include a maker license for small runs. For larger runs or special collabs, reach out.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- EMAIL CAPTURE -->
+    <section id="join" class="section card" style="padding:24px">
+      <div class="split">
+        <div>
+          <h2>Get early access + bonuses</h2>
+          <p class="muted">Drop your email to get the early‑bird code, Discord link, and bonus SVG the moment we go live.</p>
+          <form class="input" action="#" method="post">
+            <!-- Replace action with your email platform form endpoint (Mailchimp/ConvertKit/Flodesk) -->
+            <input type="email" name="email" placeholder="you@example.com" required>
+            <button class="btn" type="submit">Join the List</button>
+          </form>
+          <p class="muted" style="font-size:12px;margin-top:8px">We don’t spam. Unsubscribe anytime.</p>
+        </div>
+        <div class="card module">
+          <h3>What you’ll get</h3>
+          <ul class="list">
+            <li><span class="check">✔</span> Early‑bird discount</li>
+            <li><span class="check">✔</span> Private Discord invite</li>
+            <li><span class="check">✔</span> Bonus SVG: “Denim Demon” patch</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- STICKY CTA -->
+    <div class="cta-bar">
+      <span class="muted">Ready?</span>
+      <a class="btn" href="#products">Shop Products</a>
+      <a class="btn ghost" href="#join">Get Early Access</a>
+    </div>
+  </main>
+
+  <footer class="wrap">
+    <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center">
+      <div>&copy; <span id="yr"></span> KJP • The First Spark</div>
+      <div style="display:flex;gap:12px">
+        <!-- Swap # with actual links -->
+        <a class="badge" href="#" aria-label="Open Instagram">Instagram</a>
+        <a class="badge" href="#" aria-label="Open TikTok">TikTok</a>
+        <a class="badge" href="#" aria-label="Open Discord">Discord</a>
+        <a class="badge" href="#" aria-label="Open Email">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // set current year
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
